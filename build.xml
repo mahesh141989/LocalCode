@@ -8,5 +8,14 @@
 </target>
 <target name="abc">
 <echo>message=Hello !!!!!!</echo>
+<antcall target="replace"/>
 </target>
+<target name="replace">
+<replace file="./ANTtxt.log">
+  <replacefilter>
+    <replace token="This" replace value="That"/>
+    <replace token="That" replace value="This"/>
+    </replacefilter>
+    </replace>
+    </target>
 </project>
