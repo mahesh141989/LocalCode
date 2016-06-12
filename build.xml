@@ -12,10 +12,11 @@
 </target>
 <target name="replace">
 <replace file="./ANTtxt.log">
-  <replacefilter>
-    <replace token="This" value="That"/>
+  <replacefilter token="This" value="That"/>
+  <replacefilter token="This" value="That"/>
+  <!--  <replace token="This" value="That"/>
     <replace token="That" value="This"/>
-    </replacefilter>
+    </replacefilter>-->
     </replace>
     </target>
 </project>
