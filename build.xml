@@ -13,8 +13,8 @@
 <target name="replace">
 <replace file="./ANTtxt.log">
   <replacefilter>
-    <replace token="This" replace value="That"/>
-    <replace token="That" replace value="This"/>
+    <replace token="This" value="That"/>
+    <replace token="That" value="This"/>
     </replacefilter>
     </replace>
     </target>
