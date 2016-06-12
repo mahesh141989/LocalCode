@@ -1,1 +1,12 @@
-echo " Hello World"
+<?xml version="1.0"?>
+<project name="Task" default="Info">
+<property file="build.properties"/>
+<property name="Site.name" value="abc.com"/> 
+<target name="Info">
+<echo> The ant version is ${ant.version} and you are at ${Site.name} </echo>
+<antcall target="abc"/>
+</target>
+<target name="abc">
+<echo>message=Hello !!!!!!</echo>
+</target>
+</project>
